@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: SIGServerEJBClient.jar 
+ GeoToolsUtility.jar 
+ JasperReportsUtility.jar
+
