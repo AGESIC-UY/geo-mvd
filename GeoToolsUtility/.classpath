@@ -17,6 +17,5 @@
 			<attribute name="owner.project.facets" value="jst.java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/batik-xml-1.6.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
