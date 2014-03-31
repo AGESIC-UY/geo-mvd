@@ -10,9 +10,6 @@
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-<dependent-module archiveName="GeoToolsUtility.jar" deploy-path="/lib" handle="module:/resource/GeoToolsUtility/GeoToolsUtility">
-<dependency-type>uses</dependency-type>
-</dependent-module>
 <dependent-module archiveName="JasperReportsUtility.jar" deploy-path="/lib" handle="module:/resource/JasperReportsUtility/JasperReportsUtility">
 <dependency-type>uses</dependency-type>
 </dependent-module>

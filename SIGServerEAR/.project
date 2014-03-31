@@ -5,7 +5,6 @@
 	<projects>
 		<project>SIGServerEJB</project>
 		<project>SIGServerWeb</project>
-		<project>GeoToolsUtility</project>
 		<project>JasperReportsUtility</project>
 		<project>SIGServerEJBClient</project>
 	</projects>
