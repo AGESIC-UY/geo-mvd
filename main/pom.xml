@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<geotools-version>2.4.5</geotools-version>
+	</properties>
+
+	<groupId>uy.gub.imm.sigmvd</groupId>
+	<artifactId>main</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>SIGMVD</name>
+
+	<modules>
+		<module>../SIGServerEJBClient</module>
+		<module>../SIGEditor</module>
+		<module>../SIGServerEJB</module>
+		<module>../SIGServerWeb</module>
+		<module>../SIGServerEAR</module>
+		<module>../SIGServerEditorSample</module>
+	</modules>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.0</version>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javaee</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>5</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>osgeo</id>
+			<name>Open Source Geospatial Foundation Repository</name>
+			<url>http://download.osgeo.org/webdav/geotools/</url>
+		</repository>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>opengeo</id>
+			<name>OpenGeo Maven Repository</name>
+			<url>http://repo.opengeo.org</url>
+		</repository>
+		<repository>
+			<id>jboss-public</id>
+			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+		</repository>
+		<repository>
+			<id>maven-us.nuxeo.org</id>
+			<url>https://maven-us.nuxeo.org/nexus/content/repositories/public</url>
+		</repository>
+	</repositories>
+</project>
