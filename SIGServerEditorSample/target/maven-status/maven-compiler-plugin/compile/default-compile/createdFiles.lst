@@ -1,5 +1,5 @@
 imm/gis/run/PopupRunEditor.class
 imm/gis/run/EmbeddedRunEditor.class
-imm/gis/run/SimpleRunEditor.class
 imm/gis/run/DisposeApp.class
+imm/gis/run/SimpleRunEditor.class
 imm/gis/run/PopupRunEditor$MyAction.class

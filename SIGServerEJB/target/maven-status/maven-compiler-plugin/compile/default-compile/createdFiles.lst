@@ -12,8 +12,8 @@ imm/gis/core/data/mixto/MixtoSQLBuilder.class
 imm/gis/core/datasource/IProxyDataSource.class
 imm/gis/core/data/mixto/fidmapper/PostGISExtendedFIDMapperFactory.class
 imm/gis/IAppManager.class
-imm/gis/core/data/mixto/attributeio/DateAttributeIO.class
 imm/gis/report/ReportDataLoader.class
+imm/gis/core/data/mixto/attributeio/DateAttributeIO.class
 imm/gis/comm/IServerServices.class
 imm/gis/core/data/mixto/fidmapper/OracleFIDMapperFactory.class
 imm/gis/core/datasource/GenericDataSource.class
