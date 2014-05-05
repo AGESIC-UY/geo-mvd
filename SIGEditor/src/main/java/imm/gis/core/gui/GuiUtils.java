@@ -40,7 +40,7 @@ public class GuiUtils {
 	public static ImageIcon loadIcon(String name){
 		ImageIcon res = null;
 		
-		java.net.URL url = GuiUtils.class.getClassLoader().getResource("images/" + name);
+		java.net.URL url = GuiUtils.class.getResource("/imm/gis/images/" + name);
 		if (url != null){
 			res = new javax.swing.ImageIcon(url);
 		}
