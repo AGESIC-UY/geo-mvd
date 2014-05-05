@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tema SYSTEM "tema.dtd">
+<tema>
+<capa nombre="Nombres Calle">
+	<atributo nombre="nombre" tipo="java.lang.String"/>
+
+	<origen_datos>
+		<fuente nombre="nucleoDS" tipo="POSTGIS" />
+		<tabla nombre="mdg_nombres_vias">
+			<atributo_tabla nombre_bd="nom_calle" nombre_capa="nombre"/>
+		</tabla>
+	</origen_datos>
+</capa>
+</tema>

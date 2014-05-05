@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tema SYSTEM "tema.dtd">
+<tema>
+<capa nombre="Limites">
+	<atributo nombre="nombre" tipo="java.lang.String" consultable="true"/>
+	<atributo nombre="the_geom" tipo="com.vividsolutions.jts.geom.Polygon"/>
+	<origen_datos>
+		<fuente nombre="nucleoDS" tipo="POSTGIS"/>
+		<tabla nombre="sig_departamentos">
+		<atributo_tabla nombre_bd="nom_depto" nombre_capa="nombre"/>
+		</tabla>
+	</origen_datos>
+</capa>
+</tema>

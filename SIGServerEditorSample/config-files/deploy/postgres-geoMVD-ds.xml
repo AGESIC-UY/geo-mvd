@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  JBoss Server Configuration                                           -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<!-- $Id: postgres-geoMVD-ds.xml,                                          $ -->
+<!-- ==================================================================== -->
+<!--  Datasource config for Postgres                                      -->
+<!-- ==================================================================== -->
+
+
+<datasources>
+  <xa-datasource>
+    <jndi-name>nucleoDS</jndi-name>
+     <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+     <xa-datasource-property name="ServerName">localhost</xa-datasource-property>
+     <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+     <xa-datasource-property name="DatabaseName">nucleo</xa-datasource-property>
+     <xa-datasource-property name="User">postgres</xa-datasource-property>
+     <xa-datasource-property name="Password">postgres</xa-datasource-property>
+     <track-connection-by-tx/>
+    <metadata>
+       <type-mapping>PostgreSQL 8.1</type-mapping>
+    </metadata>
+  </xa-datasource>  
+</datasources>

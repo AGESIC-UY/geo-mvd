@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tema SYSTEM "tema.dtd">
+<tema>
+<capa nombre="Padrones">
+	<atributo nombre="padron" tipo="java.lang.Integer"/>
+	<atributo nombre="the_geom" tipo="com.vividsolutions.jts.geom.Polygon"/>	
+	
+	<origen_datos>
+		<fuente nombre="nucleoDS" tipo="POSTGIS" />
+		<tabla nombre="mdg_parcelas">
+			<atributo_tabla nombre_bd="padron" nombre_capa="padron"/>  
+		</tabla>
+	</origen_datos>
+</capa>
+</tema>

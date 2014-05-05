@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT tema (capa+)>
+
+<!ELEMENT capa (atributo+, origen_datos+)>
+<!ATTLIST capa nombre CDATA #REQUIRED>
+<!ATTLIST capa editable CDATA #REQUIRED>
+
+<!ELEMENT atributo (#PCDATA)>
+<!ATTLIST atributo nombre CDATA #REQUIRED>
+<!ATTLIST atributo tipo CDATA #REQUIRED>
+<!ATTLIST atributo admite_nulo CDATA #IMPLIED>
+<!ATTLIST atributo valor_por_defecto CDATA #IMPLIED>
+<!ATTLIST atributo largo CDATA #IMPLIED>
+<!ATTLIST atributo es_id_capa CDATA #IMPLIED>
+<!ATTLIST atributo es_geometrico CDATA #IMPLIED>
+
+<!ELEMENT origen_datos (tabla+, join*)>
+<!ATTLIST origen_datos nombre CDATA #REQUIRED>
+<!ATTLIST origen_datos tipo CDATA #REQUIRED>
+<!ATTLIST origen_datos host CDATA #REQUIRED>
+<!ATTLIST origen_datos usuario CDATA #REQUIRED>
+<!ATTLIST origen_datos password CDATA #REQUIRED>
+<!ATTLIST origen_datos base CDATA #REQUIRED>
+
+<!ELEMENT tabla (atributo_tabla*)>
+<!ATTLIST tabla nombre CDATA #REQUIRED>
+<!ATTLIST tabla columna_id CDATA #REQUIRED>
+<!ATTLIST tabla columna_geom CDATA #IMPLIED>
+<!ATTLIST tabla es_lov CDATA #IMPLIED>
+
+<!ELEMENT atributo_tabla (#PCDATA)>
+<!ATTLIST atributo_tabla nombre_bd CDATA #REQUIRED>
+<!ATTLIST atributo_tabla nombre_capa CDATA #REQUIRED>
+
+<!ELEMENT join (#PCDATA)>
+<!ATTLIST join tabla_izquierda CDATA #REQUIRED>
+<!ATTLIST join attr_izquierdo CDATA #REQUIRED>
+<!ATTLIST join tabla_derecha CDATA #REQUIRED>
+<!ATTLIST join attr_derecho CDATA #REQUIRED>

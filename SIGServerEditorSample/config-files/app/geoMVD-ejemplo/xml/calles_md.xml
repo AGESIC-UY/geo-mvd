@@ -1,0 +1,3 @@
+﻿<layer user_id="nombre">
+	<attribute name="nombre" usage="LOV" query_capable = "true" is_lazy = "true"/>
+</layer>

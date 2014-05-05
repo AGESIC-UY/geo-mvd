@@ -1,0 +1,4 @@
+<layer user_id="tramo">
+	<attribute name="tramo" query_capable = "true" />
+	<attribute name="numero" query_capable = "true" />
+</layer>

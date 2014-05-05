@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE tema SYSTEM "tema.dtd">
+<tema>
+<capa nombre="Puntos">
+<atributo nombre="num_codicen" tipo="java.lang.Integer"/>
+<atributo nombre="tipo_institucion" tipo="java.lang.String"/>
+<atributo nombre="departamento" tipo="java.lang.String"/>
+<atributo nombre="localidad" tipo="java.lang.String"/>
+<atributo nombre="direccion" tipo="java.lang.String"/>
+<atributo nombre="the_geom" tipo="com.vividsolutions.jts.geom.Point"/>
+	
+	<origen_datos>
+		<fuente nombre="nucleoDS" tipo="POSTGIS"/>
+		<tabla nombre="uptu_wifi">
+		</tabla>
+	</origen_datos>
+</capa>
+</tema>

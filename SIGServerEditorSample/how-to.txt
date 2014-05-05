@@ -1,0 +1,94 @@
+------------------------------------------------------------------------
+ geoMVD - Sistema generador de Aplicaciones GIS
+ Copyright (C) 2012  IMM - Intendencia Municipal de Montevideo
+ 
+ This file is part of geoMVD.
+
+ geoMVD is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+------------------------------------------------------------------------
+
+----------------------------
+1) Contenido
+----------------------------
+src/main/java -->  Fuentes
+
+data --> Scripts sql para importar datos de aplicacion ejemplo a base de datos
+
+config-files/app --> Configuracion en XML de aplicacion de ejemplo "geoMVD-ejemplo"
+
+config-files/deploy/postgres-geoMVD-ds.xml-->Datasource para jboss que especifica una fuente de datos postgres.
+
+----------------------------
+2) Configuración de Ambiente
+----------------------------
+
+Para la instalación y ejecución de la aplicación se requieren los siguientes componentes:
+
+	- JDK 5 o posterior (http://java.sun.com/javase/downloads/index.jsp)
+
+	- JBoss AS versión 5.1 (http://jboss.org/jbossas/)
+
+	- Base de Datos: Oracle o PostgreSQL (http://www.postgresql.org/) + postgis (http://postgis.refractions.net/)
+
+	- Drivers JDBC para la base de datos
+		-Postgres(http://jdbc.postgresql.org/download.html) 
+		-Oracle(http://www.oracle.com/technetwork/database/features/jdbc)
+	- Maven version 3 (http://maven.apache.org/)
+	- Si desean utilizar un IDE, el proyecto contiene la configuracion para Eclipse, necesitan
+	tener instalado el plugin para maven m2e (https://www.eclipse.org/m2e/)	
+
+	  
+
+
+2.1) Base de Datos
+------------------
+La configuración por defecto de este release, así como los datos de ejemplo incluidos en el mismo utilizan PostgreSQL como base de datos. 
+La configuración de la conexión a la base de datos se realiza mediante el uso de un datasource de nombre 'nucleoDS'. 
+Un ejemplo de definición de este datasource necesario para la ejecion de la aplicacion de ejemplo 
+se incluye en config-files/deploy/postgres-geoMVD-ds.xml.
+En el mismo se supone creada una geoDatabase de nombre nucleo a la que se conecta con el usuario postgres. 
+
+
+
+2.2) Aplicacion de ejemplo
+----------------------------
+
+Se incluye un ejemplo de aplicacion llamada geoMVD-ejemplo , la misma contiene Capas geograficas de Lineas puntos y poligonos.
+Los XMLs de la definicion de la aplicacion se encuentran en config-files/app/geoMVD-ejemplo.
+
+
+
+2.3) Carga de Datos de Aplicacion ejemplo
+
+En la carpeta data se encuentra los scripts para la creacion y carga de los datos que forman parte de la aplicacion ejemplo.
+Se asume que se tiene creada una geoDatabase (Postgres+Postgis) la que es referida en el archivo postgres-geoMVD-ds.xml.
+
+
+3) Despliegue de la Aplicación
+--------------------------------
+Hacer deploy del modulo SIGServerEAR en JBoss
+
+
+----------------------------
+4) Ejecución Aplicación
+----------------------------
+Con el servidor JBoss levantado y el modulo SIGServerEAR funcionando con la configuracion
+xml y la base de datos, podemos ejecutar el cliente.
+
+Ejecutar el goal exec:java de maven en la raíz del proyecto SIGServerEditorSample.
+
+
+
+
+

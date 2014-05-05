@@ -1,0 +1,6 @@
+---Instrucciones------
+
+Copiar esta carpeta en el directorio ${jboss.server.config.url}/apps/
+
+
+${jboss.server.config.url} es una variable definida por JBoss

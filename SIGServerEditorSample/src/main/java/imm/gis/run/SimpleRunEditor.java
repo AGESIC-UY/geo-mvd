@@ -8,7 +8,7 @@ public class SimpleRunEditor{
 	// Esto se hace poniendo -Dservices.rmi en la linea de comandos de la jvm
 	
 	public static void main(String[] args) {
-		SigEditor editor = new SigEditor("gnn");
+		SigEditor editor = new SigEditor("geoMVD-ejemplo");
 		editor.getControlador().getIApplication().setExitOnClose(true);
 		editor.getControlador().getIApplication().getMainGUI().setVisible(true);	
 	}	

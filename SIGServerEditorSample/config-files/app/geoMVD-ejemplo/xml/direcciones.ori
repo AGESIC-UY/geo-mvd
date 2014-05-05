@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE tema SYSTEM "tema.dtd">
+<tema>
+<capa nombre="Direcciones">
+	<atributo nombre="numero" tipo="java.lang.Integer"/>
+	<atributo nombre="tramo" tipo="imm.gis.core.feature.FeatureReferenceAttribute" capa_referenciada="Calles"/>
+	<atributo nombre="the_geom" tipo="com.vividsolutions.jts.geom.Point"/>
+	
+	<origen_datos>
+		<fuente nombre="nucleoDS" tipo="POSTGIS"/>
+		<tabla nombre="mdg_accesos">
+			<atributo_tabla nombre_bd="num_puerta" nombre_capa="numero"/>
+			<atributo_tabla nombre_bd="gid_tramo_via" nombre_capa="tramo"/>
+		</tabla>
+	</origen_datos>
+</capa>
+</tema>

@@ -15,4 +15,8 @@ APP = nombre de la aplicacion
 
 El main esta en la clase imm.gis.run.SimpleRunEditor y se debe cambiar el nombre de la 
 aplicacion que aparece en el archivo por el configurado en el paso 2.
-Luego correr la aplicacion con el goal mvn exec:java 
+Luego correr la aplicacion con el goal mvn exec:java
+
+
+Mas informacion con aplicacion de ejemplo en el modulo SIGServerEditorSample
+ 
