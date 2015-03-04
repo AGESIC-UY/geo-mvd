@@ -77,11 +77,21 @@ public class ServerAppManager {
 
 	private static String getCurrentPath() {
 		URI uri = null;
+		String value;
+		
 		try {
-			uri = new URI(System.getProperty("jboss.server.config.url"));
+			// Valor en JBoss5
+			value = System.getProperty("jboss.server.config.url");
+			if (value == null){
+				// Valor en JBoss7+
+				value = System.getProperty("jboss.server.config.dir");
+			}
+			
+			uri = new URI(value);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
+		
 		return uri.getPath();
 	}
 
