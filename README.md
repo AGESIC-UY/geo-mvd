@@ -1,4 +1,4 @@
-# geoMvd [Sin Mantenimiento]
+# geoMvd [DISCONTINUADO]
 geoMVD es un framework que permite generar una aplicación JEE para la edición de entidades con una geometría asociada, a partir de cualquier base de datos geográfica, y en forma completamente declarativa.
 
 Las aplicaciones geográficas tienen una gran relevancia en los sistemas de información. Se pueden encontrar excelentes soluciones abiertas y privativas que permiten manipular la información geográfica en ambientes de escritorio y desde el punto de vista de técnicos con conocimientos en el área.
